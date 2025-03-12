@@ -4,12 +4,16 @@
   "description": "User Management Service",
   "main": "server.js",
   "scripts": {
+    "dev": "node src/server.js",
+    "format:fix": "prettier . --write",
+    "format:check": "prettier . --check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vaibhav Tiwari <vishutiwari99@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.13.10",
+    "prettier": "3.5.3",
     "typescript": "^5.8.2"
   }
 }
