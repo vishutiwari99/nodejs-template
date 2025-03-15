@@ -1,5 +1,7 @@
-function user(params: string) {
-  return params;
+import { Config } from "./config";
+
+function user() {
+  return Config.PORT;
 }
 
-user("hello");
+user();
