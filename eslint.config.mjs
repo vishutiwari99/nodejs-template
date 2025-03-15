@@ -31,5 +31,5 @@ export default tseslint.config(
       "prefer-const": "error",
       "dot-notation": "warn",
     },
-  }
+  },
 );
