@@ -30,6 +30,7 @@ export default tseslint.config(
       semi: "error",
       "prefer-const": "error",
       "dot-notation": "warn",
+      "@typescript-eslint/no-misused-promises": "off",
     },
-  },
+  }
 );

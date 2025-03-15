@@ -1,11 +1,11 @@
 import express, { NextFunction, Request, Response } from "express";
 import logger from "./config/logger";
-import createHttpError, { HttpError } from "http-errors";
+import { HttpError } from "http-errors";
 
 const app = express();
 app.get("/", (req, res, next: NextFunction) => {
-  const err = createHttpError(404, "Not Found");
-  next(err);
+  res.status(200).send("Hello World!");
+  next();
 });
 
 // global error handler
